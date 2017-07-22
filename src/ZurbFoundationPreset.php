@@ -103,7 +103,8 @@ class ZurbFoundationPreset extends Preset
     protected static function addAuthTemplates()
     {
         // Add Auth route in 'routes/web.php'
-        Artisan::call('make:auth');
+        $auth_route_entry = "Auth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n";
+        file_put_contents('./routes/web.php', $auth_route_entry, FILE_APPEND);
 
         // Copy Zurb Foundation Auth view templates
         (new Filesystem)->copyDirectory(__DIR__.'/foundation-stubs/views', resource_path('views'));
