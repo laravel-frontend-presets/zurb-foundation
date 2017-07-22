@@ -1,0 +1,7 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-everything;
+
+// if you won't be using old float grid, comment this out
+// and desing your own auth pages
+@include foundation-grid;
