@@ -1,6 +1,7 @@
 # Laravel 5.5.x Front-end Preset For Zurb Foundation
 
 Preset for Zurb Foundation 6 scaffolding on new Laravel 5.5.x project.
+
 *Current version*: **Zurb Foundation for sites 6.4.1**
 
 ## Usage
