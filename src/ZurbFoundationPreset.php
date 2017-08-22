@@ -40,7 +40,7 @@ class ZurbFoundationPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-            'foundation-sites' => '^6.4.2',
+            'foundation-sites' => '^6.4.3',
             'jquery' => '^3.2.1',
         ] + Arr::except($packages, ['bootstrap-sass', 'bulma', 'uikit']);
     }

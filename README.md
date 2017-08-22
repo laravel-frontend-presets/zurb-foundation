@@ -2,7 +2,7 @@
 
 Preset for Zurb Foundation 6 scaffolding on new Laravel 5.5.x project.
 
-*Current version*: **Zurb Foundation for sites 6.4.2**
+*Current version*: **Zurb Foundation for sites 6.4.3**
 
 ## Usage
 1. Fresh install Laravel 5.5.x and `cd` to your app.
