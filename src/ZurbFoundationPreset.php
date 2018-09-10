@@ -53,16 +53,16 @@ class ZurbFoundationPreset extends Preset
     protected static function updateSass()
     {
         // clean up orphan files
-        $orphan_sass_files = glob(resource_path('/assets/sass/*.*'));
+        $orphan_sass_files = glob(resource_path('/sass/*.*'));
 
         foreach($orphan_sass_files as $sass_file)
         {
             (new Filesystem)->delete($sass_file);
         }
 
-        copy(__DIR__.'/foundation-stubs/_settings.scss', resource_path('assets/sass/_settings.scss'));
-        copy(__DIR__.'/foundation-stubs/foundation.scss', resource_path('assets/sass/foundation.scss'));
-        copy(__DIR__.'/foundation-stubs/app.scss', resource_path('assets/sass/app.scss'));
+        copy(__DIR__.'/foundation-stubs/_settings.scss', resource_path('sass/_settings.scss'));
+        copy(__DIR__.'/foundation-stubs/foundation.scss', resource_path('sass/foundation.scss'));
+        copy(__DIR__.'/foundation-stubs/app.scss', resource_path('sass/app.scss'));
     }
 
     /**
@@ -73,10 +73,10 @@ class ZurbFoundationPreset extends Preset
     protected static function updateBootstrapping()
     {
         (new Filesystem)->delete(
-            resource_path('assets/js/bootstrap.js')
+            resource_path('js/bootstrap.js')
         );
 
-        copy(__DIR__.'/foundation-stubs/bootstrap.js', resource_path('assets/js/bootstrap.js'));
+        copy(__DIR__.'/foundation-stubs/bootstrap.js', resource_path('js/bootstrap.js'));
     }
 
     /**
