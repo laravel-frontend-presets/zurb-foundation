@@ -2,7 +2,7 @@
 
 Zurb Foundation Frontend Preset For Laravel Framework 5.5 and Up
 
-*Current version*: **Zurb Foundation for sites 6.4.3**
+*Current version*: **Zurb Foundation for sites 6.5.0**
 
 ## Usage
 1. Fresh install Laravel 5.5 (and up) and `cd` to your app.

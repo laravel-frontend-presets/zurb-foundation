@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="foundation_button_test">
-                    <p class="framwork_title">Zurb Foundation 6.4.3</p>
+                    <p class="framwork_title">Zurb Foundation 6.5.0</p>
                     <a class="button primary" href="#">Primary</a>
                     <a class="button secondary" href="#">Secondary</a>
                     <a class="button success" href="#">Success</a>
