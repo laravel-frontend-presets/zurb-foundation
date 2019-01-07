@@ -17,7 +17,7 @@
                 {{ csrf_field() }}
 
                 <div class="name">
-                    <label for="email">Name</label>
+                    <label for="email">{{ __('Name') }}</label>
 
                     <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" aria-describedby="nameHelpText" required autofocus>
 
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="email">
-                    <label for="email">E-Mail Address</label>
+                    <label for="email">{{ __('E-Mail Address') }}</label>
 
                     <input id="email" type="email" name="email" value="{{ old('email') }}" aria-describedby="emailHelpText" required>
 
@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="password">
-                    <label for="password">Password</label>
+                    <label for="password">{{ __('Password') }}</label>
 
                     <input id="password" type="password" name="password" aria-describedby="passwordHelpText" required>
 
@@ -53,13 +53,13 @@
                 </div>
 
                 <div class="password-confirm">
-                    <label for="password-confirm">Confirm Password</label>
+                    <label for="password-confirm">{{ __('Confirm Password') }}</label>
                     <input id="password-confirm" type="password" name="password_confirmation" required>
                 </div>
 
                 <div class="register_button">
                     <button type="submit" class="button">
-                        Register
+                        {{ __('Register') }}
                     </button>
                 </div>
 

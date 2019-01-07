@@ -17,7 +17,7 @@
             </div>
 
             <div class="form-title text-center">
-                Reset Password
+                {{ __('Reset Password') }}
             </div>
 
             <form class="forgot-password-form" method="POST" action="{{ route('password.email') }}">
@@ -25,7 +25,7 @@
                 {{ csrf_field() }}
 
                 <div class="email">
-                    <label for="email">E-Mail Address</label>
+                    <label for="email">{{ __('E-Mail Address') }}</label>
 
                     <input id="email" type="email" name="email" value="{{ old('email') }}" aria-describedby="emailHelpText" required autofocus>
 
@@ -38,7 +38,7 @@
 
                 <div class="send-button">
                     <button type="submit" class="button">
-                        Send Password Reset Link
+                        {{ __('Send Password Reset Link') }}
                     </button>
                 </div>
 
