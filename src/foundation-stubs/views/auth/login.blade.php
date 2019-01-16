@@ -17,7 +17,7 @@
                 {{ csrf_field() }}
 
                 <div class="email">
-                    <label for="email">E-Mail Address</label>
+                    <label for="email">{{ __('E-Mail Address') }}</label>
 
                     <input id="email" type="email" name="email" value="{{ old('email') }}" aria-describedby="emailHelpText" required autofocus>
 
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="password">
-                    <label for="password">Password</label>
+                    <label for="password">{{ __('Password') }}</label>
 
                     <input id="password" type="password" name="password" aria-describedby="passwordHelpText" required>
 
@@ -42,18 +42,18 @@
 
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
                     </label>
                 </div>
 
                 <div class="button-plus-link">
                     <button type="submit" class="button">
-                        Login
+                        {{ __('Login') }}
                     </button>
 
                     <a href="{{ route('password.request') }}">
                         &nbsp;
-                        Forgot Your Password?
+                        {{ __('Forgot Your Password?') }}
                     </a>
                 </div>
             </form>

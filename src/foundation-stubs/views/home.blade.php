@@ -9,11 +9,11 @@
         <div class="form-container small-6 small-centered columns">
 
             <div class="form-title text-center">
-                Dashboard
+                {{ __('Dashboard') }}
             </div>
 
             <div class="callout">
-                You are logged in!
+                {{ __('You are logged in!') }}
             </div>
 
         </div>

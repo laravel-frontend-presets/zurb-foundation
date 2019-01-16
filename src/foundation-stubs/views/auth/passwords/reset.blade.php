@@ -17,7 +17,7 @@
             </div>
 
             <div class="form-title text-center">
-                Reset Password
+                {{ __('Reset Password') }}
             </div>
 
             <form class="password-reset-form" method="POST" action="{{ route('password.request') }}">
@@ -27,7 +27,7 @@
                 <input type="hidden" name="token" value="{{ $token }}">
 
                 <div class="email">
-                    <label for="email">E-Mail Address</label>
+                    <label for="email">{{ __('E-Mail Address') }}</label>
 
                     <input id="email" type="email" name="email" value="{{ old('email') }}" aria-describedby="emailHelpText" required autofocus>
 
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="password">
-                    <label for="password-confirm">Confirm Password</label>
+                    <label for="password-confirm">{{ __('Confirm Password') }}</label>
 
                     <input id="password-confirm" type="password" name="password_confirmation" aria-describedby="passwordConfirmHelpText" required>
 
@@ -64,7 +64,7 @@
 
                 <div class="reset-button">
                     <button type="submit" class="button">
-                        Reset Password
+                        {{ __('Reset Password') }}
                     </button>
                 </div>
 

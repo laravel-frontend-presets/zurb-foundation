@@ -91,10 +91,10 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">{{ __('Home') }}</a>
                     @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
+                        <a href="{{ url('/login') }}">{{ __('Login') }}</a>
+                        <a href="{{ url('/register') }}">{{ __('Register') }}</a>
                     @endif
                 </div>
             @endif
@@ -103,15 +103,15 @@
 
                 <div class="title m-b-md">
                     Laravel
-                    <p class="versioninfo">Version {{ app()->version() }}</p>
+                    <p class="versioninfo">{{ __('Version') }} {{ app()->version() }}</p>
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://laravel.com/docs">{{ __('Documentation') }}</a>
+                    <a href="https://laracasts.com">{{ __('Laracasts') }}</a>
+                    <a href="https://laravel-news.com">{{ __('News') }}</a>
+                    <a href="https://forge.laravel.com">{{ __('Forge') }}</a>
+                    <a href="https://github.com/laravel/laravel">{{ __('GitHub') }}</a>
                 </div>
 
                 <div class="foundation_button_test">
