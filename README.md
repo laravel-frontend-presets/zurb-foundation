@@ -1,12 +1,12 @@
 # Zurb Foundation Frontend Preset For Laravel Framework 5.5 and Up
 
-Zurb Foundation Frontend Preset For Laravel Framework 5.5 and Up
+Zurb Foundation Frontend Preset For Laravel Framework 6.0
 
 *Current version*: **Zurb Foundation for sites 6.5.0**
 
 ## Usage
-1. Fresh install Laravel 5.5 (and up) and `cd` to your app.
-2. Install this preset via `composer require laravel-frontend-presets/zurb-foundation`. No need to register the service provider. Laravel 5.5 & up can auto detect the package.
+1. Fresh install Laravel 6 and `cd` to your app.
+2. Install this preset via `composer require laravel-frontend-presets/zurb-foundation`. No need to register the service provider. Laravel 6 can auto detect the package.
 3. Use `php artisan preset foundation` for basic Zurb Foundation preset. **OR** Use `php artisan preset foundation-auth` for basic preset, Auth route entry and Zurb Foundation Auth views in one go.
 4. `npm install`
 5. `npm run dev`
