@@ -1,5 +1,5 @@
 {
-    "name": "crazyinventor/zurb-foundation-laravel-frontend-presets",
+    "name": "laravel-frontend-presets/zurb-foundation",
     "description": "Laravel 6.0.x Front-end preset for Zurb Foundation",
     "keywords": ["laravel", "preset", "zurb-foundation", "foundation"],
     "license": "MIT",
