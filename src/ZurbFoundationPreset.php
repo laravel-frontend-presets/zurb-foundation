@@ -1,10 +1,10 @@
 <?php
+
 namespace LaravelFrontendPresets\ZurbFoundationPreset;
 
-use Artisan;
-use Illuminate\Support\Arr;
 use Illuminate\Filesystem\Filesystem;
-use Illuminate\Foundation\Console\Presets\Preset;
+use Illuminate\Support\Arr;
+use Laravel\Ui\Presets\Preset;
 
 class ZurbFoundationPreset extends Preset
 {
@@ -34,15 +34,20 @@ class ZurbFoundationPreset extends Preset
     /**
      * Update the given package array.
      *
-     * @param  array  $packages
+     * @param  array $packages
      * @return array
      */
     protected static function updatePackageArray(array $packages)
     {
         return [
-            'foundation-sites' => '^6.5.0',
+            'foundation-sites' => '^6.5',
             'jquery' => '^3.2',
-        ] + Arr::except($packages, ['bootstrap-sass', 'bulma', 'uikit']);
+        ] + Arr::except($packages, [
+            'bootstrap',
+            'bootstrap-sass',
+            'bulma',
+            'uikit'
+        ]);
     }
 
     /**
